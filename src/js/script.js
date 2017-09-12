@@ -8,10 +8,13 @@ function getData(callback){
 	const limit = 15;
 	isLoading = true;
 	var apiUrl = 'https://api.twitch.tv/kraken/streams?client_id=' + clientId + '&game=' + game + '&limit=' + limit + '&offset=' + nowIndex ;
+	// 撰寫XHR請求(使用get)
 
-	//撰寫XHR請求(使用get)
+	// 判斷XHR請求運行狀況
 
-	//{接收請求的回應並應用(完成)}
+	// DOM選取要改變的區塊
+	
+	// 接收請求的回應並改變區塊
 
 }
 
