@@ -1,20 +1,8 @@
 
-
 var nowIndex = 0;
 var isLoading = false;
-var LANG = 'zh-tw';
-
-//DOM選取要改變的區塊
-function changeLang(lang){
-
-	const row = document.querySelector('.row');
-	row.innerHTML = "";
-	nowIndex = 0;
-	getData();
-}
 
 function getData(callback){
-	lang = LANG;
 	const clientId = '';
 	const game = 'Overwatch';
 	const limit = 15;
@@ -49,7 +37,7 @@ function getColumn(data){
 document.addEventListener("DOMContentLoaded", function(){
 
 	document.querySelector('.lang-tw').addEventListener("click", function(){
-		changeLang("zh-tw");
+		getData();
 	}, false);
 
 
